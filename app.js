@@ -5,11 +5,15 @@ function calculate() {
     let first = document.getElementById("first");
     let total = weight / (height / 100 * height / 100);
     let round = total.toFixed(2);
-    if(round === " "){
-        first.innerText = "Please enter some value";
-    }else{
         first.innerText = `Your Total BMI is = ${round}`;
+        if(total <= 25){
+            document.getElementById("second").innerText = "you are underweight"
+        } else if(total <= 29){
+            document.getElementById("second").innerText = "you are healty weight"
+        } else if(total >= 29){
+            document.getElementById("second").innerText = "you are over weight"
+        }
 
-    }
+    
     
 }
