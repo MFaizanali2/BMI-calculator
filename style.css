@@ -21,4 +21,84 @@ body{
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5), 0 10px 30px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     border: 1px solid #fff;
+    overflow: hidden;
+}
+#container h1{
+    font-family: "Roboto";
+    text-align: center;
+    margin: 30px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 36px;
+}
+#input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+}
+#input input{
+    width: 70%;
+    margin-left: 15%;
+    outline: none;
+    border: 1px solid gray;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 8px 0;
+    font-size: 1em;
+    color: #000;
+    
+}
+#input label{
+    margin-left: 15%;
+    color: #fff;
+    font-size: 1.25em;
+    font-family: "Roboto";
+}
+button{
+    /* width: 40%; */
+    margin-top: 8%;
+    margin-left: 20%;
+    outline: none;
+    border: none;
+    background-color: #3c95ff;
+    color: #dbe9ff;
+    border-radius: 5px;
+    font-family: "Roboto";
+    padding: 12px 30px;
+    font-size: 1.25em;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    /* color: royalblue; */
+    background-color:  rgb(9, 103, 197);
+    transition: 0.5s;
+    overflow: hidden;
+}
+button:hover{
+    /* color: royalblue; */
+    border: 2px solid rgb(9, 103, 197);
+    
+}
+button:hover span{
+    
+    width: 100%; 
+    /* color: royalblue; */
+    border: 2px solid rgb(9, 103, 197);
+    border-radius: 5px;
+}
+#output{
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
 }
