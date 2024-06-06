@@ -6,10 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI calculator</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
 </head>
 
 <body>
-
+    <div id="container">
+        <h1>BMI Calculator</h1>
+        <div id="input">
+            <label for="weight">Weight:</label>
+            <input type="text" placeholder="Enter Your Weight" id="weight">
+            <label for="weight">Height:</label>
+            <input type="text" placeholder="Enter Your Height" id="height">
+        </div>
+        <button onclick="calculate();">Let's Calculate</button>
+    </div>
 
     <script src="app.js"></script>
 </body>
