@@ -8,16 +8,19 @@ html,body{
     height: 100vh;
 }
 body{
-    background-color: rgb(60, 127, 228);
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #container{
-    width: 30vw;
+    width: 30%;
     height: 80vh;
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: transparent;
+    transform: translate(-50%,-50%); */
+    background-color: #fff;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5), 0 10px 30px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     border: 1px solid #fff;
@@ -28,7 +31,7 @@ body{
     text-align: center;
     margin: 30px;
     border-bottom: 1px solid #fff;
-    color: #fff;
+    color: #000;
     font-size: 36px;
 }
 #input{
@@ -52,7 +55,7 @@ body{
 }
 #input label{
     margin-left: 15%;
-    color: #fff;
+    color: #000;
     font-size: 1.25em;
     font-family: "Roboto";
 }
@@ -101,12 +104,12 @@ button:hover span{
 h6{
     text-align: center;
     font-family: sans-serif;
-    color: #fff;
+    color: #000;
     margin: 20px;
     font-size: 16px;
 }
 #output{
     margin-top: 30px;
     text-align: center;
-    color: #fff;
+    color: #000;
 }
